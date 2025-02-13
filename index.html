@@ -11,388 +11,332 @@ rel="stylesheet"
 />
 </head>
 <body>
+
 <div class="header">
 <nav class="navbar-container">
-<div class="navbar" >
-<div class="logo"><a href="index.html" ><img src="img/banner/logo_sait.svg" alt="logo"></a></div>
+    <div class="navbar" >
+        <div class="logo"><a href="index.html" ><img src="img/banner/logo_sait.svg" alt="logo"></a></div>
+        <div class="search-container">
+            <form class="search-form" action="#" method="get">
+                <span class="search-icon"></span><!-- Иконка лупы серой -->
+                <input type="text" class="search-input" name="query"  placeholder="Search events" />
+                <input type="text" class="location-input" name="location" placeholder="Mountain View, CA" />
+                <button class="search-btn"  ><img src="img/banner/search_icon.svg" type="submit"  aria-label="Search"></button>
+            </form>
+        </div>
 
-
-<div class="search-container">
-<form class="search-form" action="#" method="get">
-
-<span class="search-icon"></span><!-- Иконка лупы серой -->
-
-
-<input type="text" class="search-input" name="query"  placeholder="Search events" />
-
-
-<input type="text" class="location-input" name="location" placeholder="Mountain View, CA" />
-
-
-<button class="search-btn"  ><img src="img/banner/search_icon.svg" type="submit"  aria-label="Search"></button>
-</form>
-</div>
-
-
-
-<div class="actions">
-<a href="#"><img src="img/banner/earth_icon.svg"> English</a>
-<a href="#">Log in</a>
-<a href="#" class="signup">Sign up</a>
-</div>
-</div>
+        <div class="actions">
+            <a href="#"><img src="img/banner/earth_icon.svg"> English</a>
+            <a href="#">Log in</a>
+            <a href="#" class="signup">Sign up</a>
+        </div>
+    </div>
 </nav>
 </div>
 
-
+<!-- Начало основного блока -->
 <main class="site-main">
+    <div class="max-width-container">
 
-<div class="max-width-container">
+<!-- Начало баннера -->
+    <div class="header__information">
+    <div class="header__information-text">
+        <div class="header__information-paragraphs">
+            <h1>The people platform—Where interests become friendships</h1>
+            <p>Whatever your interest, from hiking and reading to networking and skill sharing, there are thousands of people who share it on Meetup. Events are happening every day—sign up to join the fun.</p>
+        </div>
 
-<div class="header__information">
-<div class="header__information-text">
-<div class="header__information-paragraphs">
-<h1>The people platform—Where interests become friendships</h1>
-<p>Whatever your interest, from hiking and reading to networking and skill sharing, there are thousands of people who share it on Meetup. Events are happening every day—sign up to join the fun.</p>
-</div>
-<div class="header__information-button">
-<a href="filter.html" class="linkbutton">Join Meetup</a>
-</div>
-</div>
-<div class="header__information-label">
-<img src="img/banner/cycle_irl_event.svg.svg" alt="The people platform—Where interests become friendships">
-</div>
-</div>
-</div>
+        <div class="header__information-button">
+            <a href="filter.html" class="linkbutton">Join Meetup</a>
+        </div>
+    </div>
+        <div class="header__information-label">
+            <img src="img/banner/cycle_irl_event.svg.svg" alt="The people platform—Where interests become friendships">
+        </div>
+    </div>
+    </div>
+<!-- Конец баннера -->
 
+<!-- Начало блока 1 с карточками -->
+    <div class="events-header2">
+    <!-- Левая часть: текст + плашка локации -->
+        <div class="events-header-left2">
+        <h2>Events near</h2>
+            <div class="location-badge2">
+            <span class="location-text2">Mountain View, CA</span>
+            <img src="img/banner/pen1.svg" alt="Edit" class="edit-icon2">
+        </div>
+    </div>
+    <!-- Справа: ссылка -->
+        <a href="#" class="see-all2">See all events</a>
+    </div>
 
+    <div id="eventsMain"></div>
+<!-- Конец блока 1 с карточками -->
 
+<!-- Начало блока 2 с карточками -->
+    <div class="events-header2">
+    <!-- Левая часть: текст + плашка локации -->
+        <div class="events-header-left2">
+            <h2>Upcoming online events</h2>
+        </div>
+        <!-- Справа: ссылка -->
+            <a href="#" class="see-all2">See all events</a>
+    </div>
+    <div class="container">
+        <div class="cards">
+            <div id="onlineEvents"></div>
+        </div>
+    </div>
+<!-- Конец блока 2 с карточками -->
 
-
-
-
-
-
-
-
-<div class="events-header2">
-<!-- Левая часть: текст + плашка локации -->
-<div class="events-header-left2">
-<h2>Events near</h2>
-<div class="location-badge2">
-<span class="location-text2">Mountain View, CA</span>
-<img src="img/banner/pen1.svg" alt="Edit" class="edit-icon2">
-</div>
-</div>
-
-<!-- Справа: ссылка -->
-<a href="#" class="see-all2">See all events</a>
-</div>
-
-
-<div id="eventsMain"></div>
-
-
-
-
-
-
-
-
-<div class="events-header2">
-<!-- Левая часть: текст + плашка локации -->
-<div class="events-header-left2">
-<h2>Upcoming online events</h2>
-
-</div>
-
-<!-- Справа: ссылка -->
-<a href="#" class="see-all2">See all events</a>
-</div>
-<div class="container">
-<div class="cards">
-<div id="onlineEvents"></div>
-</div>
-</div>
-
-
-
-
-
-<!-- Блок "Join Meetup" -->
+<!-- Начало блока "Join Meetup" с руками -->
 <section class="join-meetup">
-<div class="join-meetup-left">
-<h2>Join Meetup</h2>
-<p>People use Meetup to meet new people, learn new things, find support, 
-get out of their comfort zones, and pursue their passions, together. 
-Membership is free.
-</p>
-<button class="sign-up-btn">Sign up</button>
-</div>
-<div class="join-meetup-right">
-
-<img src="img/icon_category/hands.svg" alt="Hands raised illustration">
-</div>
+    <div class="join-meetup-left">
+        <h2>Join Meetup</h2>
+            <p>People use Meetup to meet new people, learn new things, find support, 
+            get out of their comfort zones, and pursue their passions, together. 
+            Membership is free.</p>
+        <button class="sign-up-btn">Sign up</button>
+    </div>
+    <div class="join-meetup-right">
+        <img src="img/icon_category/hands.svg" alt="Hands raised illustration">
+    </div>
 </section>
+<!-- Конец блока "Join Meetup" с руками -->
 
-
-
-
-
+<!-- Начало блока категорий -->
 <div class="block_content_h2">
-
 <h2 class="mar_bot_h2">Explore top categories</h2>
-
 <!-- Блок категорий -->
-<section class="categories">
-
-<div class="category-card">
-<img src="img/icon_category/travel_and_outdoor.svg.svg" alt="Travel icon">
-<p>Travel and Outdoor</p>
+    <section class="categories">
+        <div class="category-card">
+            <img src="img/icon_category/travel_and_outdoor.svg.svg" alt="Travel icon">
+            <p>Travel and Outdoor</p>
+        </div>
+        <div class="category-card">
+            <img src="img/icon_category/social_activities.svg.svg" alt="Social icon">
+            <p>Social Activities</p>
+        </div>
+        <div class="category-card">
+            <img src="img/icon_category/hobbies_and_passions.svg.svg" alt="Hobbies icon">
+            <p>Hobbies and Passions</p>
+        </div>
+        <div class="category-card">
+            <img src="img/icon_category/sports_and_fitness.svg.svg" alt="Sports icon">
+            <p>Sports and Fitness</p>
+        </div>
+        <div class="category-card">
+            <img src="img/icon_category/health_and_wellness.svg.svg" alt="Health icon">
+            <p>Health and Wellbeing</p>
+        </div>
+        <div class="category-card">
+            <img src="img/icon_category/technology.svg fill.svg" alt="Technology icon">
+            <p>Technology</p>
+        </div>
+        <div class="category-card">
+            <img src="img/icon_category/art_and_culture.svg.svg" alt="Art icon">
+            <p>Art and Culture</p>
+        </div>
+        <div class="category-card">
+            <img src="img/icon_category/games.svg.svg" alt="Games icon">
+            <p>Games</p>
+        </div>
+    </section>
 </div>
+<!-- Конец блока категорий -->
 
-<div class="category-card">
-<img src="img/icon_category/social_activities.svg.svg" alt="Social icon">
-<p>Social Activities</p>
-</div>
-
-<div class="category-card">
-<img src="img/icon_category/hobbies_and_passions.svg.svg" alt="Hobbies icon">
-<p>Hobbies and Passions</p>
-</div>
-
-<div class="category-card">
-<img src="img/icon_category/sports_and_fitness.svg.svg" alt="Sports icon">
-<p>Sports and Fitness</p>
-</div>
-
-<div class="category-card">
-<img src="img/icon_category/health_and_wellness.svg.svg" alt="Health icon">
-<p>Health and Wellbeing</p>
-</div>
-
-<div class="category-card">
-<img src="img/icon_category/technology.svg fill.svg" alt="Technology icon">
-<p>Technology</p>
-</div>
-
-<div class="category-card">
-<img src="img/icon_category/art_and_culture.svg.svg" alt="Art icon">
-<p>Art and Culture</p>
-</div>
-
-<div class="category-card">
-<img src="img/icon_category/games.svg.svg" alt="Games icon">
-<p>Games</p>
-</div>
-</section>
-</div>
-
-
-
+<!-- Начало блока городов -->
 <div class="block_content_h2">
-<!-- Секция "Popular cities on Meetup" -->
 <section class="popular-cities">
-<h2 class="mar_bot_h2">Popular cities on Meetup</h2>
-<p class="subtitle">
-Looking for fun things to do near you? See what Meetup organizers are 
-planning in cities around the country.
-</p>
+    <h2 class="mar_bot_h2">Popular cities on Meetup</h2>
+    <p class="subtitle">
+    Looking for fun things to do near you? See what Meetup organizers are 
+    planning in cities around the country.</p>
 
-<div class="cities-grid">
-
-<div class="city-card">
-<img src="img/city/new_york.webp.svg" alt="New York">
-<h4>New York</h4>
-</div>
-<div class="city-card">
-<img src="img/city/san_francisco.webp.svg" alt="San Francisco">
-<h4>San Francisco</h4>
-</div>
-<div class="city-card">
-<img src="img/city/chicago.webp.png" alt="Chicago">
-<h4>Chicago</h4>
-</div>
-<div class="city-card">
-<img src="img/city/nashville.webp.svg" alt="Nashville">
-<h4>Nashville</h4>
-</div>
-<div class="city-card">
-<img src="img/city/miami.webp.svg" alt="Miami">
-<h4>Miami</h4>
-</div>
-</div>
+    <div class="cities-grid">
+        <div class="city-card">
+            <img src="img/city/new_york.webp.svg" alt="New York">
+            <h4>New York</h4>
+        </div>
+        <div class="city-card">
+            <img src="img/city/san_francisco.webp.svg" alt="San Francisco">
+            <h4>San Francisco</h4>
+        </div>
+        <div class="city-card">
+            <img src="img/city/chicago.webp.png" alt="Chicago">
+            <h4>Chicago</h4>
+        </div>
+        <div class="city-card">
+            <img src="img/city/nashville.webp.svg" alt="Nashville">
+            <h4>Nashville</h4>
+        </div>
+        <div class="city-card">
+            <img src="img/city/miami.webp.svg" alt="Miami">
+            <h4>Miami</h4>
+        </div>
+    </div>
 </section>
-
 </div>
+<!-- Конец блока городов -->
 
-
-
+<!-- Начало блока с иконками плюс и поиск -->
 <div class="block_content_h2">
-<!-- Секция "How Meetup works" -->
 <section class="how-it-works">
-<h2 class="mar_bot_h2">How Meetup works</h2>
+    <h2 class="mar_bot_h2">How Meetup works</h2>
 
-<div class="info-cards">
-<div class="info-card">
-<div class="icon-area">
+    <div class="info-cards">
+        <div class="info-card">
+            <div class="icon-area">
+                <img src="img/city/search_blue.svg" alt="Search icon">
+            </div>
+            <h3>Discover events and groups</h3>
+            <p>See who's hosting local events for all the things you love</p>
+            <a href="#">Search events and groups</a>
+        </div>
 
-<img src="img/city/search_blue.svg" alt="Search icon">
-
-</div>
-
-<h3>Discover events and groups</h3>
-<p>See who's hosting local events for all the things you love</p>
-<a href="#">Search events and groups</a>
-</div>
-
-<div class="info-card">
-<div class="icon-area">
-
-<img src="img/city/plus_blue.svg" alt="Plus icon">
-</div>
-<h3>Start a group to host events</h3>
-<p>Create your own Meetup group, and draw from a community of millions</p>
-<a href="#">Start a group</a>
-</div>
-</div>
+        <div class="info-card">
+            <div class="icon-area">
+                <img src="img/city/plus_blue.svg" alt="Plus icon">
+            </div>
+            <h3>Start a group to host events</h3>
+            <p>Create your own Meetup group, and draw from a community of millions</p>
+            <a href="#">Start a group</a>
+        </div>
+    </div>
 </section>
 </div>
+<!-- Конец блока с иконками плюс и поиск -->
 
 
-
-
+<!-- Начало 3 статей -->
 <div class="block_content_h2">
-<!-- Секция заголовка и описания -->
-<section class="friends-intro">
-<h2 class="mar_bot_h2">Friendships are made on Meetup</h2>
-<p>
-Since 2002, members have used Meetup to make new friends, 
-meet like-minded people, spend time on hobbies, 
-and connect with locals over shared interests. Learn how.
-</p>
-</section>
+    <section class="friends-intro">
+        <h2 class="mar_bot_h2">Friendships are made on Meetup</h2>
+        <p>Since 2002, members have used Meetup to make new friends, 
+        meet like-minded people, spend time on hobbies, 
+        and connect with locals over shared interests. Learn how.</p>
+    </section>
 
-<!-- Секция карточек -->
-<section class="friends-cards">
-<!-- Карточка 1 -->
-<article class="friend-card">
-<img src="img/city/first_article.webp.png" alt="Brunch table">
-<h3>I Used Meetup to Make Friends at Brunch</h3>
-<p>
-New Jersey-based writer and college student Brianna Stryker wanted 
-to meet friends in her hometown. Learn how she used Meetup to make 
-connections by joining a Girls Night Out Meetup group.
-</p>
-<a href="#">Read more</a>
-</article>
+    <!-- Секция карточек -->
+    <section class="friends-cards">
+        <!-- Карточка 1 -->
+        <article class="friend-card">
+            <img src="img/city/first_article.webp.png" alt="Brunch table">
+            <h3>I Used Meetup to Make Friends at Brunch</h3>
+            <p>
+            New Jersey-based writer and college student Brianna Stryker wanted 
+            to meet friends in her hometown. Learn how she used Meetup to make 
+            connections by joining a Girls Night Out Meetup group.
+            </p>
+            <a href="#">Read more</a>
+        </article>
 
-<!-- Карточка 2 -->
-<article class="friend-card">
-<img src="img/city/second_article.webp.png" alt="Friends on a hill">
-<h3>How to Turn Casual Connections into Close Friendships</h3>
-<p>
-It’s proven that close friendships are harder to make as an adult. 
-But don’t sweat it: here’s what you can do to simplify the process.
-</p>
-<a href="#">Read more</a>
-</article>
+        <!-- Карточка 2 -->
+        <article class="friend-card">
+            <img src="img/city/second_article.webp.png" alt="Friends on a hill">
+            <h3>How to Turn Casual Connections into Close Friendships</h3>
+            <p>
+            It’s proven that close friendships are harder to make as an adult. 
+            But don’t sweat it: here’s what you can do to simplify the process.
+            </p>
+            <a href="#">Read more</a>
+        </article>
 
-<!-- Карточка 3 -->
-<article class="friend-card">
-<img src="img/city/third_article.webp.png" alt="Group of friends talking">
-<h3>Do You Have the “Right” Number of Friends?</h3>
-<p>
-Studies from around the world have tried to help people answer 
-this question. Learn about the three tiers of friendship 
-and how to fulfill them.
-</p>
-<a href="#">Read more</a>
-</article>
-
-
-</section>
+        <!-- Карточка 3 -->
+        <article class="friend-card">
+            <img src="img/city/third_article.webp.png" alt="Group of friends talking">
+            <h3>Do You Have the “Right” Number of Friends?</h3>
+            <p>
+            Studies from around the world have tried to help people answer 
+            this question. Learn about the three tiers of friendship 
+            and how to fulfill them.
+            </p>
+            <a href="#">Read more</a>
+        </article>
+    </section>
 </div>
+<!-- Конец блока 3 статей -->
+
 </main>
+<!-- Конец основного блока-->
 
 
-
-
-
+<!-- Начало футера -->
 <div class="step_foot"></div>
 <footer class="footer">
 <div class="footer-wrapper">
-<!-- Верхняя часть -->
-<div class="footer-top">
-<p>Create your own Meetup group.</p>
-<button>Get Started</button>
-</div>
+    <!-- Верхняя часть -->
+    <div class="footer-top">
+        <p>Create your own Meetup group.</p>
+        <button>Get Started</button>
+    </div>
 
 <!-- Средняя часть футера -->
 <div class="footer-middle">
-<!-- Первые три колонки -->
-<div class="footer-left">
-<div class="footer-column">
-<h3>Your Account</h3>
-<a href="#">Sign up</a>
-<a href="#">Log in</a>
-<a href="#">Help</a>
-<a href="#">Become an Affiliate</a>
-</div>
-<div class="footer-column">
-<h3>Discover</h3>
-<a href="#">Groups</a>
-<a href="#">Calendar</a>
-<a href="#">Topics</a>
-<a href="#">Cities</a>
-<a href="#">Online Events</a>
-<a href="#">Local Guides</a>
-<a href="#">Make Friends</a>
-</div>
-<div class="footer-column">
-<h3>Meetup</h3>
-<a href="#">About</a>
-<a href="#">Blog</a>
-<a href="#">Meetup Pro</a>
-<a href="#">Careers</a>
-<a href="#">Apps</a>
-<a href="#">Podcast</a>
-</div>
+    <!-- Первые три колонки -->
+    <div class="footer-left">
+        <div class="footer-column">
+            <h3>Your Account</h3>
+            <a href="#">Sign up</a>
+            <a href="#">Log in</a>
+            <a href="#">Help</a>
+            <a href="#">Become an Affiliate</a>
+        </div>
+        <div class="footer-column">
+            <h3>Discover</h3>
+            <a href="#">Groups</a>
+            <a href="#">Calendar</a>
+            <a href="#">Topics</a>
+            <a href="#">Cities</a>
+            <a href="#">Online Events</a>
+            <a href="#">Local Guides</a>
+            <a href="#">Make Friends</a>
+        </div>
+        <div class="footer-column">
+            <h3>Meetup</h3>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Meetup Pro</a>
+            <a href="#">Careers</a>
+            <a href="#">Apps</a>
+            <a href="#">Podcast</a>
+        </div>
+    </div>
+
+    <!-- Блок ниже: Follow us и кнопки магазинов -->
+    <div class="footer-right">
+        <div class="footer-column">
+            <h3>Follow us</h3>
+            <div class="social-icons">
+                <img src="img/icon_category/fb.svg" alt="Facebook">
+                <img src="img/icon_category/tw.svg" alt="Twitter">
+                <img src="img/icon_category/youtube.svg" alt="YouTube">
+                <img src="img/icon_category/insta.svg" alt="Instagram">
+                <img src="img/icon_category/tik.svg" alt="TikTok">
+            </div>
+        </div>
+        <div class="footer-column store-buttons">
+            <img src="img/icon_category/googlepay.svg" alt="Google Play">
+            <img src="img/icon_category/applepay.svg" alt="App Store">
+        </div>
+    </div>
 </div>
 
-<!-- Блок ниже: Follow us и кнопки магазинов -->
-<div class="footer-right">
-<div class="footer-column">
-<h3>Follow us</h3>
-<div class="social-icons">
-<img src="img/icon_category/fb.svg" alt="Facebook">
-<img src="img/icon_category/tw.svg" alt="Twitter">
-<img src="img/icon_category/youtube.svg" alt="YouTube">
-<img src="img/icon_category/insta.svg" alt="Instagram">
-<img src="img/icon_category/tik.svg" alt="TikTok">
-</div>
-</div>
-<div class="footer-column store-buttons">
-<img src="img/icon_category/googlepay.svg" alt="Google Play">
-<img src="img/icon_category/applepay.svg" alt="App Store">
-</div>
-</div>
-</div>
-
-<!-- Нижняя часть (копирайт и ссылки) -->
-<div class="footer-bottom">
-
-<div class="footer-bottom-links">
-<span>© 2024 Meetup</span>
-<a href="#">Terms of Service</a>
-<a href="#">Privacy Policy</a>
-<a href="#">Do Not Sell or Share My Personal Data</a>
-<a href="#">Cookie Policy</a>
-<a href="#">Help</a>
-</div>
-</div>
+    <!-- Нижняя часть (копирайт и ссылки) -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-links">
+            <span>© 2024 Meetup</span>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Do Not Sell or Share My Personal Data</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Help</a>
+        </div>
+    </div>
 </div>    
 </footer>
+<!-- Конец футера -->
 
 <script src="js/main.js"></script>
 </body>
