@@ -1,17 +1,51 @@
-/* Error: Expected newline.
- *   ,
- * 1 | * {
- *   |   ^
- *   '
- *   src\sass\filter.sass 1:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected newline.\a   \2577 \a 1 \2502  * {\d\a   \2502    ^\a   \2575 \a   src\\sass\\filter.sass 1:3  root stylesheet";
+html, body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 1px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42rem;
+  line-height: 52rem;
+  color: #212121;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28rem;
+  line-height: 36rem;
+  color: #212121;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20rem;
+  line-height: 24rem;
+  color: #212121;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 24rem;
+  color: #212121;
+}
+
+/*# sourceMappingURL=filter.css.map */
