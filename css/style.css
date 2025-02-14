@@ -73,14 +73,15 @@ padding: 0 0 122rem 0;
 display: flex;
 flex-direction: column;
 }
+
 .navbar {
 display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 10rem 20rem;
 flex-wrap: nowrap;
-
 }
+
 .logo {
 margin-top:6rem;
 }
@@ -93,16 +94,17 @@ align-items: center;
 margin-left: auto;
 font-size: 14rem;
 }
+
 .actions a {
 margin-left: 15rem;
 text-decoration: none;
 color: black;
 white-space: nowrap;
-
 display: inline-flex;   
 align-items: center;     
 gap: 8rem; 
 }
+
 .signup {
 background: #00798a;
 color: #fff!important;
@@ -110,19 +112,12 @@ padding: 8rem 15rem;
 border-radius: 5rem;
 }
 
-
-
-
-
-
 .filters {
 display: flex;
 gap: 10rem;
 margin-bottom: 20rem;
 padding: 28rem 0 6rem 0;
-
 max-width: 100%;
-
 }
 
 .filter-box {
@@ -133,6 +128,7 @@ display: flex;
 align-items: center;
 margin-right: 6rem;
 }
+
 select {
 border: none;
 background: transparent;
@@ -141,20 +137,15 @@ padding: 5rem;
 outline: none;
 }
 
-
-
-/* 
-Контейнер с карточками
-Grid из 4 колонок
-*/
+/* Контейнер с карточками*/
 #eventsMain, #onlineEvents {
 display: grid;
-grid-template-columns: repeat(4, 1fr); /* 4 колонки равной ширины */
-gap: 20rem;                             /* отступ между карточками */
-
-margin: 0 auto;                       /* центрируем по горизонтали */
-padding: 20rem;                        /* отступы вокруг */
+grid-template-columns: repeat(4, 1fr);
+gap: 20rem; 
+margin: 0 auto;
+padding: 20rem;                        
 }
+
 /* Стили для самой карточки */
 .event {
 padding: 10rem;
@@ -167,9 +158,6 @@ font-size: 14rem;
 color: #444;
 margin: 10rem 0 0 0;
 }
-
-
-
 
 /* онлайн на картинке */
 .event-card {
@@ -202,10 +190,12 @@ padding: 4rem 8rem;
 font-weight: 500;
 border-radius: 4px;
 }
+
 #video {
 width: 13rem;
 height: 10rem;
 }
+
 .icon_small_cards {
 display: flex;
 justify-content: flex-end;
@@ -214,26 +204,19 @@ align-items: center;
 margin-top: -14rem;
 }
 
-
 .card-footer-span {
 display: flex;           
 align-items: center;     
 gap: 16rem;              
-
 }
 
 .icon_small_cards img {
 vertical-align: middle;  
-
 }
+
 #event-category {
 font-size: 12rem;
 }
-
-
-
-
-
 
 
 /* 
@@ -249,12 +232,12 @@ border-radius: 8px;
 
 margin: 2rem auto; 
 }
+
 .join-meetup-left {
 flex: 1;
 max-width: 600rem;
 margin: 0 0 0 56rem;
 }
-
 
 .sign-up-btn {
 background-color: #E32359; 
@@ -263,16 +246,18 @@ border: none;
 padding: 8rem 45rem;
 cursor: pointer;
 border-radius: 4px;
-
 }
+
 .join-meetup-left p {
 margin: 20rem 0 20rem 0;
 }
+
 .join-meetup-right {
 /* flex: 1; */
 display: flex;
 justify-content: flex-end;
 }
+
 .join-meetup-right img {
 max-width: 341rem;  
 height: auto;
@@ -280,18 +265,16 @@ display: block;
 margin: 36rem 56rem;
 }
 
-
-
 /* Блок категорий в строку */
 .categories {
 display: flex;
 flex-wrap: wrap;       /* чтобы переносились на новую строку, если не влазят */
 gap: 1rem;
-
 margin: 0 auto 2rem;  
 padding: 0 2rem;
 justify-content: center;
 }
+
 .category-card {
 margin: 4rem 4rem 0 0;
 width: 135rem;
@@ -304,23 +287,18 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+
 .category-card img {
 width: 20rem;
 height: 20rem;
 margin-bottom: 15rem;
 }
-.category-card p {
 
+.category-card p {
 font-size: 14rem;
 line-height: 20rem;
 font-weight: 500;
 }
-
-
-
-
-
-
 
 /* Контейнер формы поиска */
 .search-container {
@@ -328,7 +306,6 @@ width: 592rem;
 margin: 20rem 0 20rem 40rem;
 padding: 0 20rem;
 }
-
 
 .search-form {
 display: flex;
@@ -338,7 +315,6 @@ border: 1px solid #ccc;
 border-radius: 4px;
 overflow: hidden;
 height: 42rem;
-
 }
 
 /* Иконка слева (лупа внутри поля) */
@@ -378,25 +354,17 @@ font-size: 16rem;
 display: flex;     
 align-items: center;
 justify-content: center;
-
 }
 
 /* Hover-эффект на кнопку */
 .search-btn:hover {
 background-color: #fa6666;
 }
+
 .search-btn img {
 width: 20rem; 
 height: 20rem;
-
 }
-
-
-
-
-
-
-
 
 .header__information {
 display: flex;
@@ -421,7 +389,6 @@ gap: 24rem;
 .header__information-label {
 width: 30%;
 max-width: 379rem;
-
 }
 
 .header__information-label img {
@@ -432,8 +399,6 @@ width: 100%;
 display: flex;
 flex-direction: column;
 gap: 22rem;
-
-
 }
 
 .header__information-paragraphs p {
@@ -443,6 +408,7 @@ font-size: 20rem;
 line-height: 34rem;
 color: rgb(33, 37, 41);
 }
+
 /*button classes*/
 .button {
 background: rgb(50, 50, 50);
@@ -473,7 +439,6 @@ cursor: default;
 pointer-events: none;
 opacity: 0.2;
 }
-
 /*End button classes*/
 
 /*linkbutton classes*/
@@ -511,14 +476,7 @@ padding: 18rem 31rem;
 background-color: #FFF;
 color: #323232;
 }
-
 /*End linkbutton classes*/
-
-
-
-
-
-
 
 .events-header2 {
 display: flex;
@@ -532,8 +490,6 @@ display: inline-flex;
 align-items: center;
 gap: 50rem;                  
 }
-
-
 
 /* Оформление плашки локации */
 .location-badge2 {
@@ -564,7 +520,6 @@ color: #00798a;
 font-weight: 600;
 font-size: 16rem;
 line-height: 24rem;
-
 }
 
 .see-all2:hover {
@@ -572,15 +527,7 @@ text-decoration: underline;
 }
 
 
-
-
-
-
-
-
-
-
-
+/* ------------Стили при max-width: 1024px---------------  */
 @media (max-width: 1024px) {
 
 #eventsMain, #onlineEvents {
@@ -603,6 +550,7 @@ padding: 0 0 92rem 0;
 .header__information-label {
 margin-top: 0rem;
 }
+
 .navbar {
 display: flex;
 justify-content: flex-start;
@@ -616,65 +564,56 @@ color: black;
 white-space: nowrap;  
 }
 
-
-
-
-
-
-
-
 /* Делаем форму в одну линию, но прячем поле локации */
 .location-input {
 display: none;
 }
+
 /* Увеличить поле поиска на всю ширину (flex: 1) */
 .search-input {
 flex: 1;
 }
 
-
 .join-meetup {
 flex-direction: column;
 text-align: center;
 }
+
 .join-meetup-left {
 margin-right: 20rem;
 max-width: 100%;
 padding: 30rem 20rem 0 0;
 }
+
 .join-meetup-right {
 justify-content: center;
 margin-top: 1rem;
 }     
 
-
 }
 
+/* ------------Стили при max-width: 768px---------------  */
 @media (max-width: 768px) {
 
 .max-width-container {
 padding: 0 0 52rem 0;
 }
 
-
-
-
 .filters {
-  gap: 4rem;
-  margin-bottom: 20rem;
-  padding: 28rem 0 6rem 0;
+gap: 4rem;
+margin-bottom: 20rem;
+padding: 28rem 0 6rem 0;
 
-      overflow-x: auto; /* Прокрутка по горизонтали */
-      white-space: nowrap; /* Запрещает перенос текста */
+overflow-x: auto; /* Прокрутка по горизонтали */
+white-space: nowrap; /* Запрещает перенос текста */
 
-      scrollbar-width: thin; /* Для Firefox */
-      scrollbar-color: #888 #f1f1f1;
-  }
-  
-  .filter-box {
-  padding: 4rem 8rem;
-  }
+scrollbar-width: thin; /* Для Firefox */
+scrollbar-color: #888 #f1f1f1;
+}
 
+.filter-box {
+padding: 4rem 8rem;
+}
 
 #eventsMain, #onlineEvents {
 display: grid;
@@ -689,10 +628,12 @@ h1 {
 font-size: 50rem;
 line-height: 60rem;
 }
+
 h2 {
 font-size: 36rem;
 line-height: 40rem;
 }
+
 h3 {
 font-size: 18rem;
 line-height: 20rem;
@@ -705,7 +646,6 @@ justify-content: center;
 align-items: center;
 padding: 10rem 20rem;
 }
-
 
 .header__information-label {
 width: 100%;
@@ -721,26 +661,19 @@ width: 100%;
 max-width: 100%;
 order: 1;
 }
+
 .header__information-button {
 display: none;
 }
 
-
-
 .navbar-container {
-
 display: flex;
 flex-direction: column;
 align-items: center;
 }
 
-
-
-
-
 .navbar {
 display: flex;
-
 flex-direction: row !important;  
 flex-wrap: wrap;
 align-items: center; 
@@ -766,6 +699,7 @@ margin: 18rem 0 0 0;
 .location-input {
 display: none;
 }
+
 /* Увеличить поле поиска на всю ширину (flex: 1) */
 .search-input {
 flex: 1;
@@ -776,14 +710,12 @@ flex: 1;
 max-width: none;
 margin-left: -40%;
 }
+
 .footer-column.store-buttons {
 display: none;
 }
 
-
-
 /* Оформление плашки локации */
-
 .location-text2 {
 font-size: 16rem;
 }
@@ -791,49 +723,46 @@ font-size: 16rem;
 /* Ссылка «See all events» */
 .see-all2 {
 display: none;
-
 }
+
 .events-header-left2 {
 gap: 20rem;
 }
+
 .location-badge2 {
 gap: 2rem;
 padding: 10rem 10rem;
-
 }
 
 h1 {
 font-size: 25rem;
 line-height: 31rem;
 }
+
 h2 {
 font-size: 20rem;
 line-height: 24rem;
-
 }  
 }
 
+/* ------------Стили при max-width: 398px---------------  */
 @media (max-width: 398px) {
-
-
-
 .card-footer-span {
 margin: 0.5rem 0;
 }
+
 .chek2, .calen, #tick2, .attend2 {
 display: none;
 }
+
 .attendees-block {
 padding-top: 30rem;
 }
-
-
 
 .friend-card:last-child {
 flex: 0 0 calc(100% - 10rem) !important;
 max-width: calc(100% - 10rem); 
 }
-
 
 .header__information {
 margin-top: 40rem;
@@ -843,11 +772,7 @@ margin-bottom: 20rem;
 .header__information-paragraphs p {
 font-size: 12rem;
 line-height: 22rem;
-
 }
-
-
-
 
 .location-input {
 display: none;
@@ -857,12 +782,8 @@ display: none;
 flex: 1;
 }
 
-
-
-
 .navbar {
 display: flex;
-
 flex-direction: row !important;  
 flex-wrap: wrap;
 align-items: center; 
@@ -884,18 +805,14 @@ width: 100%;
 margin: 18rem 0 0 0;
 }
 
-
-
-
-
 h1 {
 font-size: 25rem;
 line-height: 31rem;
 }
+
 h2 {
 font-size: 20rem;
 line-height: 24rem;
-
 } 
 
 h3 {
@@ -911,40 +828,39 @@ padding: 0 16rem 0 16rem;
 }
 
 .event {
-  display: flex;
-  align-items: flex-start;
-  border-top: 1px solid #ccc;
-  padding: 12rem 0 10rem 0;
-  }
-  .image-wrapper {
-  flex: 0 0 96px;  
-  margin-right: 1rem;
-  position: relative;
-  }
-  .image-wrapper img {
-  
-  width: 96px;
-  height: auto;
-  }
-  .event-details {
-  flex: 1;
-  }
-  
-  
-  
-  
-  .event-details {
-  display: flex;
-  flex-direction: column;
-  margin-left: 12rem;
-  }
-  /* Задаём нужный порядок элементов */
-  .formattedDate-block { order: 1; }
-  .title-block       { order: 2; }
-  .category-block    { order: 3; }
-  .type-block        { order: 4; }
-  .attendees-block   { order: 5; }
-  
+display: flex;
+align-items: flex-start;
+border-top: 1px solid #ccc;
+padding: 12rem 0 10rem 0;
+}
+
+.image-wrapper {
+flex: 0 0 96px;  
+margin-right: 1rem;
+position: relative;
+}
+
+.image-wrapper img {
+width: 96px;
+height: auto;
+}
+
+.event-details {
+flex: 1;
+}
+
+.event-details {
+display: flex;
+flex-direction: column;
+margin-left: 12rem;
+}
+
+/* Задаём нужный порядок элементов */
+.formattedDate-block { order: 1; }
+.title-block       { order: 2; }
+.category-block    { order: 3; }
+.type-block        { order: 4; }
+.attendees-block   { order: 5; }
 .event p, .event span {
 margin: 0;
 }
@@ -958,10 +874,10 @@ margin: 0 auto;
 padding: 20rem 0 20rem 0;                      
 }
 
-
 .online-label.desktop {
 display: none;
 }
+
 .online-label.mobile {
 display: none;
 }
@@ -970,7 +886,6 @@ display: none;
   max-width: 268rem;
 }
 
-
 }
 
 
@@ -978,31 +893,12 @@ display: none;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===================================
-Популярные города
-=================================== */
+/* Популярные города */
 .popular-cities {
-
 margin: 0 auto 20rem;
 }
 
 .popular-cities .subtitle {
-
 color: #666;
 margin-bottom: 15rem;
 }
@@ -1023,6 +919,7 @@ align-items: center;
 width: 205rem;       
 text-align: center;
 }
+
 .city-card img {
 width: 205rem;
 height: 205rem;
@@ -1030,6 +927,7 @@ object-fit: cover;  /* обрезать/масштабировать */
 border-radius: 50%; 
 margin-bottom: 5rem;
 }
+
 .city-card h4 {
 font-size: 20rem;
 margin-top: 25rem;
@@ -1039,10 +937,8 @@ margin-top: 25rem;
 2. How Meetup works
 =================================== */
 .how-it-works {
-
 margin: 20rem auto;
 }
-
 
 /* Две карточки рядом на десктопе */
 .info-cards {
@@ -1059,9 +955,11 @@ border-radius: 6px;
 padding: 30rem;
 text-align: left;
 }
+
 .info-card .icon-area {
 margin-bottom: 5rem;
 }
+
 .info-card img {
 width: 40rem; 
 height: 40rem;
@@ -1069,8 +967,6 @@ float: left;
 margin-right: 15rem;
 max-width: 50%;
 height: auto;
-
-
 }
 
 .info-card p {
@@ -1078,19 +974,19 @@ font-size: 16rem;
 margin-bottom: 7.5rem;
 color: #555;
 }
+
 .info-card a {
 color: #00798a;  
 text-decoration: none;
 font-weight: 600;
 font-size: 16rem;
 }
+
 .info-card a:hover {
 text-decoration: underline;
 }
 
-/* ===================================
-Адаптивные стили
-=================================== */
+/* Адаптивные стили */
 @media (max-width: 768px) {
 /* Городские карточки 3 в ряд */
 .city-card {
@@ -1108,8 +1004,6 @@ font-size: 15rem;
 margin-top: 25rem;
 }
 
-
-
 /* Инфокарточки стекаются */
 .info-cards {
 flex-direction: column;
@@ -1125,36 +1019,19 @@ width: 45%;
 
 
 
-
-
-
-
-
-
-
-
-
-/* =====================
-Заголовки и подзаголовки
-===================== */
-
+/* Заголовки и подзаголовки */
 .intro-subtitle {
-
 color: #666;
 margin-bottom: 15rem;
 max-width: 700rem; 
 }
 
-/* =====================
-Секция карточек
-===================== */
+/*Секция карточек */
 .friends-cards {
 /* Способ 1: Flex */
 display: flex;
 flex-wrap: wrap;   
 gap: 10rem;       
-
-
 }
 
 /* Оформление карточки */
@@ -1164,7 +1041,6 @@ min-width: 214rem;
 background-color: #fff;
 border-radius: 4px;
 overflow: hidden;    
-
 padding: 20rem 0 10rem 0;
 display: flex;       
 flex-direction: column;
@@ -1178,10 +1054,7 @@ margin-bottom: 26rem;
 object-fit: cover;  
 }
 
-
-
 .friend-card p {
-
 flex: 1;      
 color: #555;
 margin-bottom: 5rem;
@@ -1201,14 +1074,10 @@ margin-top: auto;
 text-decoration: underline;
 }
 
-/* =====================
-Адаптив
-===================== */
-
+/*Адаптив */
 @media (max-width: 768px) {
 .friend-card {
 flex: 1 1 calc(50% - 10rem); 
-
 margin-bottom: 10rem; 
 }
 .friend-card:last-child {
@@ -1216,16 +1085,7 @@ flex: 0 0 calc(50% - 10rem) !important;
 max-width: calc(50% - 10rem);
 }
 
-
-
-
 }
-
-
-
-
-
-
 
 .block_content_h2 {
 margin: 40rem 0 0 0;
@@ -1233,15 +1093,6 @@ margin: 40rem 0 0 0;
 .mar_bot_h2 {
 margin-bottom: 16rem;
 }
-
-
-
-
-
-
-
-
-
 
 .footer {
 max-width: 1512rem;
@@ -1251,18 +1102,16 @@ background-color: #212121;
 color: #fff;
 }
 
-
 .footer-top {
 display: flex;
 justify-content: space-between;
 align-items: center;
 margin-bottom: 20rem;
-
-
 flex-wrap: wrap;
 border-bottom: 1px solid #444;
 padding-top: 10rem;
 }
+
 .footer-top button {
 background: #212121;
 color: #fff;
@@ -1286,7 +1135,6 @@ gap: 30rem;
 margin-bottom: 20rem;
 }
 .footer-left .footer-column {
-
 min-width: 25%;
 }
 
@@ -1295,6 +1143,7 @@ margin-bottom: 10rem;
 font-size: 16rem;
 color: #fff;
 }
+
 .footer a, .footer span {
 color: #fff;
 text-decoration: none;
@@ -1306,20 +1155,21 @@ font-size: 14rem;
 /* Блок ниже Follow us и кнопки магазинов */
 .footer-right {
 display: flex;
-
 gap: 20rem;
-
 justify-content: space-between;
 align-items: center;
 }
+
 .social-icons {
 display: flex;
 gap: 32rem;
 }
+
 .social-icons img {
 width: 30rem;
 height: 30rem;
 }
+
 .store-buttons img {
 width: 140rem;
 height: 40rem;
@@ -1334,28 +1184,31 @@ flex-wrap: wrap;
 border-top: 1px solid #444;
 padding-top: 10rem;
 }
+
 .footer-bottom p, .footer-top p {
 color:#fff;
 margin-bottom: 10rem;
 }
+
 .footer-bottom-links {
 display: flex;
 flex-wrap: wrap;
 gap: 15rem;
 }
+
 .footer-bottom-links a {
 white-space: nowrap;
 }
 
 
 @media (max-width: 768px) {
-
 .footer-left {
 display: flex;
 flex-wrap: nowrap; 
 gap: 10rem;
 margin-bottom: 20rem;
 }
+
 .footer-left .footer-column {
 min-width: 0;
 flex: 1 1 0;
@@ -1379,13 +1232,6 @@ background-repeat: no-repeat;
 background-position: left center;
 padding-left: 20rem;
 }
-
-
-
-
-
-
-
 
 
 /* 
@@ -1463,10 +1309,8 @@ padding-left: 20rem;
   cursor: pointer;
 }
 
-/* =============================
-   Адаптивная часть
-   На мобильном скрываем блок карты
-============================= */
+/* Адаптивная часть
+   На мобильном скрываем блок карты */
 @media (max-width: 768px) {
   .events-map-container {
     flex-direction: column; /* все в столбик */
@@ -1486,9 +1330,6 @@ padding-left: 20rem;
     margin-top: -10rem;
 }
 }
-
-
-
 
 
   .event_blu {
