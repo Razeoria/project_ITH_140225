@@ -65,7 +65,7 @@ padding: 0 0 122rem 0;
 }
 
 .online-label.mobile.type-block {
-  display: none;
+display: none;
 }
 
 
@@ -143,34 +143,58 @@ outline: none;
 
 
 
-/* 
-Контейнер с карточками
-Grid из 4 колонок
-*/
+.event {
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px solid #ccc;
+  padding: 12rem 0 10rem 0;
+  }
+  .image-wrapper {
+  flex: 0 0 96px;  
+  margin-right: 1rem;
+  position: relative;
+  }
+  .image-wrapper img {
+  
+  width: 96px;
+  height: auto;
+  }
+  .event-details {
+  flex: 1;
+  }
+  
+  
+  
+  
+  .event-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12rem;
+  }
+  /* Задаём нужный порядок элементов */
+  .formattedDate-block { order: 1; }
+  .title-block       { order: 2; }
+  .category-block    { order: 3; }
+  .type-block        { order: 4; }
+  .attendees-block   { order: 5; }
+  
+.event p, .event span {
+margin: 0;
+}
+
 #eventsMain, #onlineEvents {
 display: grid;
-grid-template-columns: repeat(4, 1fr); /* 4 колонки равной ширины */
-gap: 20rem;                             /* отступ между карточками */
-
-margin: 0 auto;                       /* центрируем по горизонтали */
-padding: 20rem;                        /* отступы вокруг */
-}
-/* Стили для самой карточки */
-.event {
-padding: 10rem;
-background-color: #fff;
-margin-bottom: 10rem;
-}
-
-.event p, .event span {
-font-size: 14rem;
-color: #444;
-margin: 10rem 0 0 0;
+grid-template-columns: repeat(1, 1fr); 
+gap: 20rem;                            
+max-width: 398rem;                  
+margin: 0 auto;                      
+padding: 20rem 0 20rem 0;                      
 }
 
 
-
-
+.chek2, .calen, #tick2, .attend2 {
+  display: none;
+  }
 /* онлайн на картинке */
 .event-card {
 border: 1px solid #ccc;
@@ -583,14 +607,7 @@ text-decoration: underline;
 
 @media (max-width: 1024px) {
 
-#eventsMain, #onlineEvents {
-display: grid;
-grid-template-columns: repeat(3, 1fr); 
-gap: 20rem;                            
-max-width: 1024rem;                    
-margin: 0 auto;                       
-padding: 20rem;                       
-}
+
 
 html {
 font-size: 0.8px;
@@ -660,20 +677,20 @@ padding: 0 0 52rem 0;
 
 
 .filters {
-  gap: 4rem;
-  margin-bottom: 20rem;
-  padding: 28rem 0 6rem 0;
+gap: 4rem;
+margin-bottom: 20rem;
+padding: 28rem 0 6rem 0;
 
-      overflow-x: auto; /* Прокрутка по горизонтали */
-      white-space: nowrap; /* Запрещает перенос текста */
+overflow-x: auto; /* Прокрутка по горизонтали */
+white-space: nowrap; /* Запрещает перенос текста */
 
-      scrollbar-width: thin; /* Для Firefox */
-      scrollbar-color: #888 #f1f1f1;
-  }
-  
-  .filter-box {
-  padding: 4rem 8rem;
-  }
+scrollbar-width: thin; /* Для Firefox */
+scrollbar-color: #888 #f1f1f1;
+}
+
+.filter-box {
+padding: 4rem 8rem;
+}
 
 
 #eventsMain, #onlineEvents {
@@ -772,7 +789,7 @@ flex: 1;
 }
 
 .header__information-label img {
-  width: 180%;
+width: 180%;
 max-width: none;
 margin-left: -40%;
 }
@@ -814,19 +831,60 @@ line-height: 24rem;
 }
 
 @media (max-width: 398px) {
+.event {
+display: flex;
+align-items: flex-start;
+border-top: 1px solid #ccc;
+padding: 12rem 0 10rem 0;
+}
+.image-wrapper {
+flex: 0 0 96px;  
+margin-right: 1rem;
+position: relative;
+}
+.image-wrapper img {
 
+width: 96px;
+height: auto;
+}
+.event-details {
+flex: 1;
+}
+
+
+
+#eventsMain div.event:nth-of-type(n+4),
+#onlineEvents div.event:nth-of-type(n+4) {
+display: none;
+}
+
+
+.event-details {
+display: flex;
+flex-direction: column;
+margin-left: 12rem;
+}
+/* Задаём нужный порядок элементов */
+.formattedDate-block { order: 1; }
+.title-block       { order: 2; }
+.category-block    { order: 3; }
+.type-block        { order: 4; }
+.attendees-block   { order: 5; }
 
 
 .card-footer-span {
 margin: 0.5rem 0;
 }
-.chek2, .calen, #tick2, .attend2 {
-display: none;
-}
+
 .attendees-block {
 padding-top: 30rem;
 }
-
+.hr2_2 {
+display: block;
+border: none;
+height: 1px;
+background-color: #D9D9D9;
+}
 
 
 .friend-card:last-child {
@@ -910,41 +968,7 @@ margin: 0;
 padding: 0 16rem 0 16rem;
 }
 
-.event {
-  display: flex;
-  align-items: flex-start;
-  border-top: 1px solid #ccc;
-  padding: 12rem 0 10rem 0;
-  }
-  .image-wrapper {
-  flex: 0 0 96px;  
-  margin-right: 1rem;
-  position: relative;
-  }
-  .image-wrapper img {
-  
-  width: 96px;
-  height: auto;
-  }
-  .event-details {
-  flex: 1;
-  }
-  
-  
-  
-  
-  .event-details {
-  display: flex;
-  flex-direction: column;
-  margin-left: 12rem;
-  }
-  /* Задаём нужный порядок элементов */
-  .formattedDate-block { order: 1; }
-  .title-block       { order: 2; }
-  .category-block    { order: 3; }
-  .type-block        { order: 4; }
-  .attendees-block   { order: 5; }
-  
+
 .event p, .event span {
 margin: 0;
 }
@@ -967,261 +991,10 @@ display: none;
 }
 
 .join-meetup-right img {
-  max-width: 268rem;
+max-width: 268rem;
 }
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===================================
-Популярные города
-=================================== */
-.popular-cities {
-
-margin: 0 auto 20rem;
-}
-
-.popular-cities .subtitle {
-
-color: #666;
-margin-bottom: 15rem;
-}
-
-/* Сетка для городов */
-.cities-grid {
-display: flex;
-flex-wrap: wrap;     /* перенос на новую строку */
-gap: 20rem;           
-justify-content: center; 
-}
-
-/* Карточка города */
-.city-card {
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 205rem;       
-text-align: center;
-}
-.city-card img {
-width: 205rem;
-height: 205rem;
-object-fit: cover;  /* обрезать/масштабировать */
-border-radius: 50%; 
-margin-bottom: 5rem;
-}
-.city-card h4 {
-font-size: 20rem;
-margin-top: 25rem;
-}
-
-/* ===================================
-2. How Meetup works
-=================================== */
-.how-it-works {
-
-margin: 20rem auto;
-}
-
-
-/* Две карточки рядом на десктопе */
-.info-cards {
-display: flex;
-gap: 10rem; 
-justify-content: center;
-}
-
-/* Карточка-инструкция */
-.info-card {
-flex: 1 1 0px;       
-background-color: rgba(151, 202, 209, 0.08); 
-border-radius: 6px;
-padding: 30rem;
-text-align: left;
-}
-.info-card .icon-area {
-margin-bottom: 5rem;
-}
-.info-card img {
-width: 40rem; 
-height: 40rem;
-float: left;
-margin-right: 15rem;
-max-width: 50%;
-height: auto;
-
-
-}
-
-.info-card p {
-font-size: 16rem;
-margin-bottom: 7.5rem;
-color: #555;
-}
-.info-card a {
-color: #00798a;  
-text-decoration: none;
-font-weight: 600;
-font-size: 16rem;
-}
-.info-card a:hover {
-text-decoration: underline;
-}
-
-/* ===================================
-Адаптивные стили
-=================================== */
-@media (max-width: 768px) {
-/* Городские карточки 3 в ряд */
-.city-card {
-width: 30%;
-min-width: 140rem; 
-}
-
-.city-card img {
-width: 153rem;
-height: 153rem;
-
-}
-.city-card h4 {
-font-size: 15rem;
-margin-top: 25rem;
-}
-
-
-
-/* Инфокарточки стекаются */
-.info-cards {
-flex-direction: column;
-align-items: stretch;
-}
-}
-@media (max-width: 480px) {
-/* Городские карточки 2 в ряд */
-.city-card {
-width: 45%;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* =====================
-Заголовки и подзаголовки
-===================== */
-
-.intro-subtitle {
-
-color: #666;
-margin-bottom: 15rem;
-max-width: 700rem; 
-}
-
-/* =====================
-Секция карточек
-===================== */
-.friends-cards {
-/* Способ 1: Flex */
-display: flex;
-flex-wrap: wrap;   
-gap: 10rem;       
-
-
-}
-
-/* Оформление карточки */
-.friend-card {
-flex: 1 1 calc(33.333% - 10rem); /* 3 в ряд при наличии места */
-min-width: 214rem;
-background-color: #fff;
-border-radius: 4px;
-overflow: hidden;    
-
-padding: 20rem 0 10rem 0;
-display: flex;       
-flex-direction: column;
-}
-
-.friend-card img {
-width: 100%;
-height: auto;
-border-radius: 4px;
-margin-bottom: 26rem;
-object-fit: cover;  
-}
-
-
-
-.friend-card p {
-
-flex: 1;      
-color: #555;
-margin-bottom: 5rem;
-line-height: 24rem;
-margin: 14rem 0 14rem 0;
-}
-
-.friend-card a {
-font-size: 14rem;
-font-weight: 500;
-color: #00798a;
-text-decoration: none;
-margin-top: auto; 
-}
-
-.friend-card a:hover {
-text-decoration: underline;
-}
-
-/* =====================
-Адаптив
-===================== */
-
-@media (max-width: 768px) {
-.friend-card {
-flex: 1 1 calc(50% - 10rem); 
-
-margin-bottom: 10rem; 
-}
-.friend-card:last-child {
-flex: 0 0 calc(50% - 10rem) !important;
-max-width: calc(50% - 10rem);
-}
-
-
-
-
-}
-
-
 
 
 
@@ -1233,9 +1006,6 @@ margin: 40rem 0 0 0;
 .mar_bot_h2 {
 margin-bottom: 16rem;
 }
-
-
-
 
 
 
@@ -1389,115 +1159,145 @@ padding-left: 20rem;
 
 
 /* 
-   Общий контейнер, который включает 
-   левую часть (события) и правую часть (карта)
+Общий контейнер, который включает 
+левую часть (события) и правую часть (карта)
 */
 .events-map-container {
-  display: flex;
-  gap: 2rem;        /* Отступ между колонками */
-  max-width: 1192rem;/* Ограничиваем ширину */
-  margin: 0 auto;   /* Центрируем */
-  padding: 1rem;
+display: flex;
+gap: 2rem;        /* Отступ между колонками */
+max-width: 1192rem;/* Ограничиваем ширину */
+margin: 0 auto;   /* Центрируем */
+padding: 1rem;
 }
 
 /* Левая колонка (список событий) */
 .events-section {
-  flex: 1 1 0;
-  /* Можно добавить стили: background, padding, etc. */
+flex: 1 1 0;
+/* Можно добавить стили: background, padding, etc. */
 }
 .events-section h2 {
-  font-size: 14rem;
-  margin-bottom: 10rem;
+font-size: 14rem;
+margin-bottom: 10rem;
 }
 
 .events-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
 }
 .event-card {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 1rem;
+border: 1px solid #ccc;
+border-radius: 6px;
+padding: 1rem;
 }
 .event-card h3 {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
+margin: 0.5rem 0;
+font-size: 1.1rem;
 }
 
 /* Правая колонка (карта) */
 .map-section {
-  flex: 0 0 300rem;  /* Фиксированная ширина ~300px */
-  /* Можно сделать flex: 1 и min-width, если хотите адаптируемую ширину */
+flex: 0 0 300rem;  /* Фиксированная ширина ~300px */
+/* Можно сделать flex: 1 и min-width, если хотите адаптируемую ширину */
 }
 .map-section h3 {
-  
-  margin-bottom: 1rem;
+
+margin-bottom: 1rem;
 }
 .map-placeholder {
-  
-  height: 200px;     /* Здесь выставьте высоту карты */
-  position: relative;/* Если нужны кнопки поверх карты */
-  border-radius: 6px;
-  background: url(../img/banner/mapl.png.svg);  /* Для примера */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+height: 200px;     /* Здесь выставьте высоту карты */
+position: relative;/* Если нужны кнопки поверх карты */
+border-radius: 6px;
+background: url(../img/banner/mapl.png.svg);  /* Для примера */
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .map-button {
-  border: 1px solid #00798a;
-  background: #fff;
-  color: #00798a;
-  padding: 5rem 10rem;
-  border-radius: 4rem;
-  cursor: pointer;
+border: 1px solid #00798a;
+background: #fff;
+color: #00798a;
+padding: 5rem 10rem;
+border-radius: 4rem;
+cursor: pointer;
 }
 .map-close {
-  position: absolute;
-  top: 8rem;
-  right: 8rem;
-  border: none;
-  background: #fff;
-  color: #999;
-  font-size: 9rem;
-  cursor: pointer;
+position: absolute;
+top: 8rem;
+right: 8rem;
+border: none;
+background: #fff;
+color: #999;
+font-size: 9rem;
+cursor: pointer;
 }
 
 /* =============================
-   Адаптивная часть
-   На мобильном скрываем блок карты
+Адаптивная часть
+На мобильном скрываем блок карты
 ============================= */
 @media (max-width: 768px) {
-  .events-map-container {
-    flex-direction: column; /* все в столбик */
-  }
-  .map-section {
-    display: none; /* скрываем карту на мобильном */
-    
-  }
-  .event_blu {
-    margin-top:20rem;
-    color:#00798A;
-    text-decoration: underline;
-    font-size: 16rem;
-  }
-
-  .events-map-container .filters {
-    margin-top: -10rem;
+    .event {
+        display: flex;
+        align-items: flex-start;
+        border-top: 1px solid #ccc;
+        padding: 12rem 0 10rem 0;
+        }
+        .image-wrapper {
+        flex: 0 0 96px;  
+        margin-right: 1rem;
+        position: relative;
+        }
+        .image-wrapper img {
+        
+        width: 96px;
+        height: auto;
+        }
+        .event-details {
+        flex: 1;
+        }
+        
+        
+        
+        
+        .event-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12rem;
+        }
+        /* Задаём нужный порядок элементов */
+        .formattedDate-block { order: 1; }
+        .title-block       { order: 2; }
+        .category-block    { order: 3; }
+        .type-block        { order: 4; }
+        .attendees-block   { order: 5; }
+        
+      .event p, .event span {
+      margin: 0;
+      }
+      
+      #eventsMain, #onlineEvents {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 20rem;                            
+      max-width: 398rem;                  
+      margin: 0 auto;                      
+      padding: 20rem 0 20rem 0;                      
+      }
 }
+
+
+
+
+
+.event_blu {
+margin-top:20rem;
+color:#00798A;
+text-decoration: underline;
+
 }
 
-
-
-
-
-  .event_blu {
-    margin-top:20rem;
-    color:#00798A;
-    text-decoration: underline;
-    
-  }
-
-  .events-map-container .filters {
-    margin-top: -10rem;
+.events-map-container .filters {
+margin-top: -10rem;
 }
